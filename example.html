@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Popular Recipes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f0f0f0;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #e74c3c;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 30px;
+    }
+
+    .recipe-card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      width: 300px;
+      overflow: hidden;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+
+    .recipe-card:hover {
+      transform: scale(1.03);
+    }
+
+    .recipe-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .recipe-card h2 {
+      margin: 15px;
+      font-size: 1.2em;
+      color: #333;
+    }
+
+    .recipe-details {
+      display: none;
+      padding: 0 15px 15px;
+      font-size: 0.9em;
+      color: #555;
+    }
+
+    .recipe-details h3 {
+      margin-top: 10px;
+      margin-bottom: 5px;
+      font-size: 1em;
+      color: #222;
+    }
+
+    .recipe-details ul {
+      padding-left: 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #eaeaea;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Top Popular Dish Recipes</h1>
+  <p>Click on a card to view the full recipe</p>
+</header>
+
+<div class="container">
+
+  <!-- Recipe 1 -->
+  <div class="recipe-card" onclick="toggleRecipe(this)">
+    <img src="../MusicHub.com/img/piiza.webp" alt="Pizza">
+    <h2>Margherita Pizza</h2>
+    <div class="recipe-details">
+      <h3>Ingredients:</h3>
+      <ul>
+        <li>Pizza dough</li>
+        <li>Tomato sauce</li>
+        <li>Fresh mozzarella</li>
+        <li>Fresh basil leaves</li>
+        <li>Olive oil</li>
+      </ul>
+      <h3>Steps:</h3>
+      <ul>
+        <li>Preheat oven to 475°F (245°C).</li>
+        <li>Spread tomato sauce on dough.</li>
+        <li>Add mozzarella and basil.</li>
+        <li>Drizzle with olive oil.</li>
+        <li>Bake for 10-12 minutes.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Recipe 2 -->
+  <div class="recipe-card" onclick="toggleRecipe(this)">
+    <img src="../MusicHub.com/img/bugga.webp" alt="Burger">
+    <h2>Classic Cheeseburger</h2>
+    <div class="recipe-details">
+      <h3>Ingredients:</h3>
+      <ul>
+        <li>Beef patty</li>
+        <li>Cheddar cheese</li>
+        <li>Burger bun</li>
+        <li>Lettuce, tomato, onion</li>
+        <li>Ketchup, mustard</li>
+      </ul>
+      <h3>Steps:</h3>
+      <ul>
+        <li>Grill or pan-fry beef patty.</li>
+        <li>Place cheese on patty to melt.</li>
+        <li>Assemble bun with veggies and sauces.</li>
+        <li>Add patty and serve hot.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Recipe 3 -->
+  <div class="recipe-card" onclick="toggleRecipe(this)">
+    <img src="../MusicHub.com/img/pasta.webp" alt="Pasta">
+    <h2>Spaghetti Bolognese</h2>
+    <div class="recipe-details">
+      <h3>Ingredients:</h3>
+      <ul>
+        <li>Spaghetti pasta</li>
+        <li>Ground beef</li>
+        <li>Tomato sauce</li>
+        <li>Onion, garlic, herbs</li>
+        <li>Grated parmesan</li>
+      </ul>
+      <h3>Steps:</h3>
+      <ul>
+        <li>Cook pasta until al dente.</li>
+        <li>Sauté onion and garlic.</li>
+        <li>Add beef and cook through.</li>
+        <li>Mix in tomato sauce and simmer.</li>
+        <li>Serve over pasta with cheese.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Recipe 4 -->
+  <div class="recipe-card" onclick="toggleRecipe(this)">
+    <img src="../MusicHub.com/img/Salmon Sushi Rolls.webp" alt="Sushi">
+    <h2>Salmon Sushi Rolls</h2>
+    <div class="recipe-details">
+      <h3>Ingredients:</h3>
+      <ul>
+        <li>Sushi rice</li>
+        <li>Fresh salmon</li>
+        <li>Nori sheets</li>
+        <li>Rice vinegar, sugar</li>
+        <li>Wasabi, soy sauce</li>
+      </ul>
+      <h3>Steps:</h3>
+      <ul>
+        <li>Cook and season rice.</li>
+        <li>Lay rice on nori sheet.</li>
+        <li>Add salmon and roll tightly.</li>
+        <li>Slice into pieces and serve.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Recipe 5 -->
+  <div class="recipe-card" onclick="toggleRecipe(this)">
+    <img src="../MusicHub.com/img/tacos.webp" alt="Tacos">
+    <h2>Chicken Tacos</h2>
+    <div class="recipe-details">
+      <h3>Ingredients:</h3>
+      <ul>
+        <li>Corn tortillas</li>
+        <li>Grilled chicken</li>
+        <li>Salsa</li>
+        <li>Shredded lettuce</li>
+        <li>Cheddar cheese</li>
+      </ul>
+      <h3>Steps:</h3>
+      <ul>
+        <li>Grill and shred chicken.</li>
+        <li>Warm tortillas.</li>
+        <li>Assemble tacos with ingredients.</li>
+        <li>Top with salsa and cheese.</li>
+      </ul>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  &copy; 2025 Popular Recipes | HOMIERecipes
+</footer>
+
+<script>
+  function toggleRecipe(card) {
+    const details = card.querySelector('.recipe-details');
+    const isVisible = details.style.display === 'block';
+    details.style.display = isVisible ? 'none' : 'block';
+  }
+</script>
+
+</body>
+</html>
+

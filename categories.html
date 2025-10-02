@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        *{
+    padding: 0px;
+    margin: 0px;
+    font-family: century;
+}
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../MusicHub.com/img/Chewy\ Coconut\ Macaroons.webp);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    min-height: 100px;
+
+}
+ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 30px;
+    min-height: 400px;
+    margin-right: 40px;
+    font-size: 16px;
+}
+ul li{
+    display: inline-block;
+}
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.5s ease;
+}
+ul li a:hover{
+    background-color: #fff;
+    color: #000;
+}
+ul li.Active a{
+    background-color: #fff;
+    color: #000;
+}
+.logo{
+    float: left;
+    color: #fff;
+    margin-top: 15px;
+}
+.logo h1 a{
+    text-decoration: none;
+    color: #fff;
+}
+.main{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.submenu{
+    display: none;
+    top: 6%;
+    position: relative;
+}
+.submenu ul{
+    position: absolute;
+}
+.main ul li:hover .submenu{
+    display: block;
+    position: absolute;
+    background-color: rgb(0, 45, 117);
+    margin-top: 12px;
+    margin-left: -8px;
+}
+.main ul li:hover .submenu ul{
+    display: block;
+    margin: 6px;
+}
+.main ul li:hover .submenu ul li{
+    width: 75px;
+    padding: 5px;
+    border-bottom: 1px #fff;
+    background: transparent;
+    transition: 0.4s ease;
+    text-align: left;
+    border-radius: 0px;
+    
+}
+.main-container{
+    background-color: rgba(210, 180, 140, 0.367);
+    min-width: 300px;
+    height: 100px;
+}
+.container{
+    background-color: rgba(0, 0, 0, 0.405);
+    width: 1110px;
+    height: 70px;
+    margin: 10px;
+    border-radius: 15px;
+    margin-left: 30px;
+}
+.container .Main-Dishes{
+    width: 1100;
+    height: 20px;
+    background-color: rgba(0, 0, 0, 0.326);
+    padding: 5px;
+
+}
+.container .Main-Dishes h2{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(187, 223, 255);
+}
+
+.container .Main-Dishes a{
+    font-size: 17px;
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #fff;
+    padding: 10px;
+    transition: 0.5s ease;
+  
+}
+.container .Main-Dishes a:hover{    
+    text-decoration: underline rgba(139, 0, 0, 0.529);
+    color: #f8dada;
+}
+
+footer {
+      text-align: center;
+      background: #333;
+      color: #fff;
+      padding: 20px;
+    }
+
+    </style>
+    <meta charset="UTF-8">
+    <title>Categories</title>
+    
+</head>
+<body>
+     
+   <header>
+    <div class="main">
+     <div class="logo">
+       <h1>
+        <a href="index.html"> <span style="color: hotpink; font-size: 27px;">HOMIE</span>Recipes<span style="color: hotpink; font-size: 40px;">.</span><span style="color: hotpink; font-size: 17px;">com</span></a>
+       </h1>
+     </div>
+
+            <ul>
+            
+                <li><a href="index.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+                    <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5"/>
+                  </svg>Home</a></li>
+                <li  class="Active"><a href="categories.html">Categories</a></li>
+                <li><a href="Recipies.html">Recipes</a></li>
+                <li><a href="blog.html">Blogs</a></li>
+                <li><a href="Recipies.html">Main Dishes</a></li>
+                <li><a href="a">Popular</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Login.html"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                    <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                  </svg>Join us</a>
+                <div class="submenu">
+                    <ul>
+                        <li><a href="Login.html">SignIn</a></li>
+                        <li><a href="a">Login</a></li>
+                    </ul>
+                </div></li>
+            </ul>
+            
+    </div>  
+      
+    <div class="main-container"></div>
+    
+    <div class="container">
+        
+        <div class="Main-Dishes">
+            <h2>Main-Dishes</h2>
+        
+            <pre>
+                <a href="jellof rice.html">Jollof Rice (West African classic)</a> <a href="spagetti.html">Spaghetti Bolognese</a> <a href="ChickenCurry.html">Chicken Curry</a> <a href="FishwithPlantains.html">Grilled Fish with Plantains </a> <a href="beefstifry.html">Beef Stir-Fry </a>
+            </pre>
+        </div>
+    
+
+    </div>
+    <div class="container">
+        
+        <div class="Main-Dishes">
+            <h2> Salads</h2>
+            <pre>
+                <a href="avocadosalad.html">Avocado Salad</a> <a href="Quinoa.html">Quinoa & Veggie Bowl</a> <a href="CaesarSalad.html">Caesar Salad</a> <a href="Cabbage&Carrot.html">Cabbage & Carrot Slaw</a> <a href="Chickpeasalad.html">Chickpea Salad </a>
+            </pre>
+        </div>
+    
+
+    </div>
+    <div class="container">
+        
+        <div class="Main-Dishes">
+            <h2>Breads & Sides</h2>
+        
+            <pre>
+                <a href="GarlicBread.html">Garlic Bread</a> <a href="Puff-Puff.html">Puff-Puff (fried dough balls)</a> <a href="cornbread.html">Cornbread</a> <a href="roastedpotatos.html">Roasted Potatoes</a> <a href="yamfries.html">Yam Fries </a>
+            </pre>
+        </div>
+    
+
+    </div>
+    <div class="container">
+        
+        <div class="Main-Dishes">
+            <h2>Desserts</h2>
+        
+            <pre>
+                <a href="ChocolateCake.html">Chocolate Cake</a> <a href="bananabread.html">Banana Bread</a> <a href="Pancakes&Syrup.html">Pancakes & Syrup</a> <a href="CoconutMacaroons.html">Coconut Macaroons</a> <a href="Cheesecake.html">Cheesecake</a>
+            </pre>
+        </div>
+    
+
+    </div>
+    <div class="container">
+        
+        <div class="Main-Dishes">
+            <h2>Drinks & Smoothies</h2>
+        
+            <pre>
+                <a href="zobo.html">Zobo Drink (Hibiscus tea)</a> <a href="mangosmothiy.html">Mango Smoothie</a> <a href="gingerTea.html">Ginger Tea</a> <a href="Pineapplejuice.html">Pineapple Juice </a> <a href="Milkshakes.html"> Milkshakes (vanilla, chocolate, strawberry)</a>
+            </pre>
+        </div>
+    
+
+    </div>
+    <div class="container">
+        
+        <div class="Main-Dishes">
+            <h2>Snacks & Quick Eats</h2>
+        
+            <pre>
+                <a href="sandwich.html">Sandwiches (Club, Tuna, Egg)</a> <a href="meatpie.html">Meat Pie</a> <a href="cheakenwings.html">Chicken Wings</a> <a href="springrolls.html">Spring Rolls</a> <a href="shawama.html"> Shawama </a>
+            </pre>
+        </div>
+    
+
+    </div>
+    
+    
+   </header>
+   <footer>
+    © 2025 Cooking Blog • Made with ❤️ in HOMIERecipes
+  </footer>
+</body>
+</html>

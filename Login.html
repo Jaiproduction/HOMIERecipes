@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignIn</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        body{
+            background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../MusicHub.com/img/OIP\ \(4\).webp);
+            background-size: cover;
+            height: 900px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            
+        }
+        
+    header {
+      background: #ea580c;
+      color: #fff;
+      padding: 20px 15px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    header p {
+      margin-top: 5px;
+      font-size: 1rem;
+      opacity: 0.9;
+      color: #e0e0e0;
+    }
+        .main{
+            width: 33%;
+            height: 600px;
+            background-color: rgba(62, 31, 31, 0.853);
+            text-align: center;
+            border: 1px solid rgb(109, 3, 3);
+            border-radius: 10px;
+            margin-top: 50px;
+            margin-left: 400px;
+        }
+        .main h1{
+            padding: 10px;
+            font-size: 50px;
+            color: rgb(216, 239, 12);
+        }
+        .main form label{
+            color: rgb(216, 239, 12);
+            font-size: 25px;
+
+            
+        }
+        .main form input{
+            width: 78%;
+            height: 35px;
+        }
+        .gender{
+            width: 100%;
+            height: 120px;
+            background-color:  rgb(62, 31, 31);
+            margin-top: 10px;
+        }
+        
+        .gender h2{
+            padding: 10px;
+            color: rgb(216, 239, 12);
+        }
+        .gender #gender{
+            width: 78%;
+            height: 30px;
+        }
+        .main  #submit{
+            width: 40%;
+            height: 45px;
+            font-size: 20px;
+            background-color: #ea580c;
+            border: 0px;
+            border-radius: 5px;
+            color: #ffffff;
+            transition: 0.5s ease;
+        }
+        .main  #submit:hover{
+            background-color: #ba4100;
+            color: #e0e0e0;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>SignIn HOMIERecipes</h1>
+        <p>Join us today!!!</p>
+        <a href="index.html"><button style="margin-top:7px; border:0px; width: 150px; height: 50px; font-size: 21px; background-color: rgb(19, 74, 19); color: #fff;">go back</button></a>
+    
+      </header>
+    <div class="main">
+        <h1>Join Us</h1>
+        <form>
+            <label for="fname">First Name</label><br>
+            <input type="text" id="fname" name="fname" placeholder="First Name"><br>
+            <label for="lname">Last Name</label><br>
+            <input type="text" id="lname" name="lname" placeholder="Last Name"><br>
+            <label for="email">Email Address</label><br>
+            <input type="email" id="email" name="email" placeholder="Email Address"><br>
+            <label for="passw">Password</label><br>
+            <input type="password" id="passw" name="passw" placeholder="Password">
+        
+            <div class="gender">
+                <h2>Sellect Gender</h2>
+                <form action="">
+        
+                    <select id="gender" name="gender">
+                   <option value=""></option>
+                      <option value="male">👨 Male</option>
+                      <option value="female">👩🏾‍🦱 Female </option>
+                      <option value="others">👼 Others</option>
+                    </select>
+            
+                  </form>
+            </div>
+            <input type="submit" value="submit" id="submit"><br>
+            <a href="" style="font-size: 30px; color: blue;"> LogIn Instead </a>
+        </form>
+       
+    </div>
+    
+</body>
+</html>
